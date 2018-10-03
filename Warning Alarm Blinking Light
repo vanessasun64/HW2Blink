@@ -1,0 +1,41 @@
+/*
+In this homework assignment, I wanted to make my LEDs flash like a warning light alarm. 
+One of them blinks faster for higher urgency level. The other blinks fast but less urgent.
+I think what would make this cooler would be if I could make it hold the blinking if I didn't continue to press them down.
+*/
+
+int ledPin = 13; // choose the pin for the LED
+int buttonPin1 = 3; // button 1
+int buttonPin2 = 2; // button 2
+
+void setup() {
+  pinMode(ledPin, OUTPUT); // declare LED as output
+  pinMode(buttonPin1, INPUT); // make button 1 an input
+  pinMode(buttonPin1, INPUT); // make button 2 an input
+}
+
+void loop() {
+  // faster blinking LED
+  if (digitalRead(buttonPin2) == LOW) {
+    digitalWrite(ledPin, LOW); // turn LED OFF
+    delay(50); // pause
+    digitalWrite(ledPin, HIGH); // turn LED ON
+    delay(50); // pause
+    digitalWrite(ledPin, LOW); // turn LED OFF
+    digitalWrite(ledPin, HIGH);   // turn the LED on (HIGH is the voltage level)
+    delay(50); //pause             
+    digitalWrite(ledPin, LOW);    // turn the LED off by making the voltage LOW
+    delay(50);  
+  }
+  // slower blinking LED
+  else if (digitalRead(buttonPin1) == LOW) {
+    digitalWrite(ledPin, HIGH); // turn LED ON
+    delay(100); // pause
+    digitalWrite(ledPin, LOW); // turn LED OFF
+    digitalWrite(ledPin, HIGH);   // turn the LED on (HIGH is the voltage level)
+    delay(100); // pause
+    digitalWrite(ledPin, LOW);    // turn the LED off by making the voltage LOW
+    delay(300);  // pause
+
+  }
+}
