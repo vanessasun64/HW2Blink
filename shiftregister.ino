@@ -1,16 +1,3 @@
-/*     ---------------------------------------------------------
- *     |  Arduino Experimentation Kit Example Code             |
- *     |  CIRC-05 .: 8 More LEDs :. (74HC595 Shift Register)   |
- *     ---------------------------------------------------------
- * 
- * We have already controlled 8 LEDs however this does it in a slightly
- * different manner. Rather than using 8 pins we will use just three
- * and an additional chip.
- *
- *
- */
-
-
 //Pin Definitions
 //Pin Definitions
 //The 74HC595 uses a serial communication 
