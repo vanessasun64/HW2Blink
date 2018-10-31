@@ -43,7 +43,7 @@ void loop() {  // plays over and over
     printValues(); // command to print values
     delay(delayTime);
   
-  int Temperature; 
+
    if (bme.readTemperature () >= 25) { // when the sensor reads temp > or = 25, it will issue the command...
     digitalWrite(powerPin, HIGH); // ... to turn on the LED light! It's connected to the 9th pin, a variable declared earlier
     }
