@@ -1,7 +1,7 @@
 /*
  Sketch Title: H A P P Y
 
-This code is for a certain LED light setup on the breaboard, where the LED lights form 2 smiley faces.
+This code is for a certain LED light setup on the breadboard, where the LED lights form 2 smiley faces.
 Blue/green LEDs form one smiley and red/yellow LEDs form another smiley.
 The blue/green LEDs are connected to Pin 12 and have the pattern that lights when the yellow/red LEDs are not lit.
 The b/g LEDs signal the start of a morse code loop that the red/yellow LED lights play.
